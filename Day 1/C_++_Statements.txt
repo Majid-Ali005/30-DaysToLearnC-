@@ -1,0 +1,128 @@
+// C++ Statements
+// A computer program is a list of "instructions" to be "executed" by a computer.
+
+// In a programming language, these programming instructions are called statements.
+
+// The following statement "instructs" the compiler to print the text "Hello World" to the screen:
+
+// cout << "Hello World!";
+
+// Note
+// It is important that you end the statement with a semicolon ;
+
+// If you forget the semicolon (;), an error will occur and the program will not run:
+
+Many Statements
+- Most C++ programs contain many statements.
+
+- The statements are executed, one by one, in the same order as they are written:
+
+Example
+cout << "Hello World!";
+cout << "Have a good day!";
+return 0;
+
+Example explained
+From the example above, we have three statements:
+
+1. cout << "Hello World!";
+2. cout << "Have a good day!";
+3. return 0;
+
+The first statement is executed first (print "Hello World!" to the screen).
+Then the second statement is executed (print "Have a good day!" to the screen).
+And at last, the third statement is executed (end the C++ program successfully).
+
+NOTE:
+
+You will learn more about statements while reading this tutorial. For now, just remember to always end them with a semicolon to avoid any errors.
+
+Coming up: The next chapter will teach you how to control the output and how to insert new lines to make it more readable.
+
+
+The Whole Review Of The C++ Statements
+
+C++ statements are the fundamental building blocks of C++ programs, representing instructions that the compiler executes sequentially. 
+Each statement typically ends with a semicolon (;), signaling the end of that instruction. 
+The organization and structure of statements dictate how a program operates and the flow of control within it.
+
+Types of C++ Statements
+
+C++ includes several types of statements, each serving a specific purpose:
+Labeled Statements: Used for directing program flow, often in conjunction with goto or within switch constructs.
+Expression Statements: These involve expressions that can be evaluated to a value, such as assignments and function calls. Most statements in C++ fall into this category13.
+Compound Statements: A group of statements enclosed in curly braces {}. This allows multiple statements to be treated as a single statement, commonly used in control structures like loops and conditionals12.
+Selection Statements: These include if, else, and switch, enabling the program to execute different blocks of code based on certain conditions56.
+Iteration Statements: Such as for, while, and do while, these allow for repeating a block of code multiple times based on a condition13.
+Jump Statements: These modify the flow of control in a program. Examples include break, continue, and return statements, which can terminate loops or functions prematurely13.
+Declaration Statements: Used to declare variables and their data types within the program13.
+Exception Handling Statements: This includes try, catch, and throw, which manage errors and exceptions in a controlled manner
+
+Execution Flow
+
+C++ statements are executed in the order they appear unless altered by control flow statements (like loops or conditionals). 
+For example, 
+an if statement checks a condition, executing its block only if the condition is true; otherwise, it skips to the next statement
+
+C++ statements are the fundamental building blocks of C++ programs, representing instructions that the compiler executes sequentially. Each statement typically ends with a semicolon (`;`), signaling the end of that instruction. The organization and structure of statements dictate how a program operates and the flow of control within it.
+
+## Types of C++ Statements
+
+C++ includes several types of statements, each serving a specific purpose:
+
+- **Labeled Statements**: Used for directing program flow, often in conjunction with `goto` or within `switch` constructs.
+  
+- **Expression Statements**: These involve expressions that can be evaluated to a value, such as assignments and function calls. Most statements in C++ fall into this category[1][3].
+
+- **Compound Statements**: A group of statements enclosed in curly braces `{}`. This allows multiple statements to be treated as a single statement, commonly used in control structures like loops and conditionals[1][2].
+
+- **Selection Statements**: These include `if`, `else`, and `switch`, enabling the program to execute different blocks of code based on certain conditions[5][6].
+
+- **Iteration Statements**: Such as `for`, `while`, and `do while`, these allow for repeating a block of code multiple times based on a condition[1][3].
+
+- **Jump Statements**: These modify the flow of control in a program. Examples include `break`, `continue`, and `return` statements, which can terminate loops or functions prematurely[1][3].
+
+- **Declaration Statements**: Used to declare variables and their data types within the program[1][3].
+
+- **Exception Handling Statements**: This includes `try`, `catch`, and `throw`, which manage errors and exceptions in a controlled manner[1][3].
+
+## Execution Flow
+
+C++ statements are executed in the order they appear unless altered by control flow statements (like loops or conditionals). For example, an `if` statement checks a condition, executing its block only if the condition is true; otherwise, it skips to the next statement[6][7]. 
+
+### Example
+
+Here’s a simple example illustrating various types of statements:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 10; // Declaration statement
+    if (x > 5) { // Selection statement
+        cout << "x is greater than 5"; // Expression statement
+    } else {
+        cout << "x is not greater than 5"; // Expression statement
+    }
+    return 0; // Jump statement
+}
+```
+
+In this code:
+- The variable declaration initializes `x`.
+- The `if` statement checks if `x` is greater than 5.
+- Depending on the condition's truth value, one of two output statements executes.
+- The program ends with a return statement.
+
+Understanding these components is crucial for writing effective C++ programs, as they dictate how data is processed and how control flows through the code.
+
+Citations: yaha se ja kr aap or b parh sakty ho
+[1] https://www.scaler.com/topics/cpp/statements-in-cpp/
+[2] https://www.w3schools.com/cpp/cpp_statements.asp
+[3] https://learn.microsoft.com/vi-vn/cpp/cpp/overview-of-cpp-statements?view=msvc-160
+[4] https://stackoverflow.com/questions/5891901/what-is-considered-a-statement-in-c
+[5] https://www.geeksforgeeks.org/c-c-if-statement-with-examples/
+[6] https://www.w3schools.com/cpp/cpp_conditions.asp
+[7] https://cplusplus.com/doc/tutorial/control/
+[8] https://blog.hubspot.com/website/c-syntax
